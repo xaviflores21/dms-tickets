@@ -1,0 +1,12 @@
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\ShareKernel\bin\Debug\net5.0\ShareKernel.deps.json
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\ShareKernel\bin\Debug\net5.0\ShareKernel.dll
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\ShareKernel\bin\Debug\net5.0\ShareKernel.pdb
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\ShareKernel\obj\Debug\net5.0\ShareKernel.csproj.AssemblyReference.cache
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\ShareKernel\obj\Debug\net5.0\ShareKernel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\ShareKernel\obj\Debug\net5.0\ShareKernel.AssemblyInfoInputs.cache
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\ShareKernel\obj\Debug\net5.0\ShareKernel.AssemblyInfo.cs
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\ShareKernel\obj\Debug\net5.0\ShareKernel.csproj.CoreCompileInputs.cache
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\ShareKernel\obj\Debug\net5.0\ShareKernel.dll
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\ShareKernel\obj\Debug\net5.0\refint\ShareKernel.dll
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\ShareKernel\obj\Debug\net5.0\ShareKernel.pdb
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\ShareKernel\obj\Debug\net5.0\ref\ShareKernel.dll

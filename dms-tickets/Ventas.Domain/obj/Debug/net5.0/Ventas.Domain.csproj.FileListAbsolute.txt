@@ -1,0 +1,5 @@
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Ventas.Domain\obj\Debug\net5.0\Ventas.Domain.csproj.AssemblyReference.cache
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Ventas.Domain\obj\Debug\net5.0\Ventas.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Ventas.Domain\obj\Debug\net5.0\Ventas.Domain.AssemblyInfoInputs.cache
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Ventas.Domain\obj\Debug\net5.0\Ventas.Domain.AssemblyInfo.cs
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Ventas.Domain\obj\Debug\net5.0\Ventas.Domain.csproj.CoreCompileInputs.cache
