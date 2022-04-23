@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Ventas.Domain.Modelo.Pasajeros
 {
-    public class Pasajero : AggregateRoot<Guid>
+    public class Pasajero : Entity<Guid>
     {
         public PersonNameValue nombreCompleto { get; set; }
         public PersonNameValue ci { get; set; }
