@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareKernel", "ShareKernel\ShareKernel.csproj", "{8B22A898-CA67-4661-B09F-85D85E663B98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B22A898-CA67-4661-B09F-85D85E663B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B22A898-CA67-4661-B09F-85D85E663B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B22A898-CA67-4661-B09F-85D85E663B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B22A898-CA67-4661-B09F-85D85E663B98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1397D0EF-BE2A-4EB8-9316-223100F8F81B}
+	EndGlobalSection
+EndGlobal
