@@ -11,13 +11,13 @@ namespace Ventas.Domain.Evento
     {
         
 
-        public Guid Id { get; }
-        public string NumeroVenta { get; }
+        public Guid VentaId { get; }
+        public string NumeroTicket { get; }
 
-        public VentaCreada(DateTime occuredOn) : base(occuredOn)
+        public VentaCreada(Guid _ventaId, string _numeroTicket) : base (DateTime.Now)
         {
-
+            VentaId = _ventaId;
+            NumeroTicket = _numeroTicket;
         }
-    
     }
 }

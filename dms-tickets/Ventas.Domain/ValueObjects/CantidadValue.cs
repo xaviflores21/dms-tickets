@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ventas.Domain.Model.ValueObjects
+namespace Ventas.Domain.ValueObjects
 {
     public record CantidadValue : ValueObject
     {
