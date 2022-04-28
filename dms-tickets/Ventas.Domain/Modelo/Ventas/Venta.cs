@@ -13,20 +13,18 @@ namespace Ventas.Domain.Modelo.Ventas
     public class Venta : AggregateRoot<Guid>
     {
         public Guid PasajeroId { get; private set; }
-        public DateTime fechaReserva { get; private set; }
-        public DateTime fechaPago { get; private set; }
         public NumeroVenta numeroTicket { get; private set; }
         public PrecioValue montoTotal { get; private set; }
         public bool tipo { get; private set; }
         public string pasajero { get; private set; }
 
-        private readonly ICollection<Tipo_Pago> _tipoPago;
+        private readonly ICollection<Pago> _tipoPago;
 
-        public IReadOnlyCollection<Tipo_Pago> Tipo
+        public IReadOnlyCollection<Pago> Tipo
         {
             get 
             {
-                return new ReadOnlyCollection<Tipo_Pago>(_tipoPago.ToList());
+                return new ReadOnlyCollection<Pago>(_tipoPago.ToList());
             }
         }
 
@@ -35,7 +33,7 @@ namespace Ventas.Domain.Modelo.Ventas
             Id = Guid.NewGuid();
             numeroTicket = _numeroTicket;
             montoTotal = new PrecioValue(0m);
-            _tipoPago = new List<Tipo_Pago>();
+            _tipoPago = new List<Pago>();
         }
 
         public void AgregarItem(Guid _VueloId, decimal _montoReserva, decimal _montoSubTotal, int _cantidadTicket, decimal _precio, string _descripcion)
@@ -43,7 +41,7 @@ namespace Ventas.Domain.Modelo.Ventas
             var tipoPago = _tipoPago.FirstOrDefault(x => x.VueloId == _VueloId);
             if (tipoPago is null)
             {
-                tipoPago = new Tipo_Pago(_VueloId, _montoReserva, _montoSubTotal, _cantidadTicket, _precio, _descripcion);
+                tipoPago = new Pago(_VueloId, _montoReserva, _montoSubTotal, _cantidadTicket, _precio, _descripcion);
                 _tipoPago.Add(tipoPago);
             }
             else

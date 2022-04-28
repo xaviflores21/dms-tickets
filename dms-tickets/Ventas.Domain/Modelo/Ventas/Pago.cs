@@ -8,7 +8,7 @@ using Ventas.Domain.ValueObjects;
 
 namespace Ventas.Domain.Modelo.Ventas
 {
-    public class Tipo_Pago : Entity<Guid>
+    public class Pago : Entity<Guid>
     {
         //TODO: Crear value objects para las propiedades
         public Guid VueloId { get; private set; }
@@ -18,7 +18,7 @@ namespace Ventas.Domain.Modelo.Ventas
         public PrecioValue precio { get; private set; }
         public string descripcion { get; private set; }
 
-        internal Tipo_Pago(Guid _vueloId,  decimal _montoReserva, decimal _montoSubTotal, 
+        internal Pago(Guid _vueloId,  decimal _montoReserva, decimal _montoSubTotal, 
             int _cantidadTicket, decimal _precio, string _descripcion)
         {
             Id = Guid.NewGuid();
