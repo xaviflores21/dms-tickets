@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace Pedidos.Infraestructure.EF.UseCases.Queries.Pedidos
 {
     public class SearchPedidosHandler : 
-        IRequestHandler<SearchPedidosQuery, ICollection<PedidoDto>>
+        IRequestHandler<SearchVueloQuery, ICollection<PedidoDto>>
     {
         private readonly DbSet<VueloReadModel> _pedidos;
 
@@ -21,7 +21,7 @@ namespace Pedidos.Infraestructure.EF.UseCases.Queries.Pedidos
             _pedidos = context.Pedido;
         }
 
-        public async Task<ICollection<PedidoDto>> Handle(SearchPedidosQuery request, CancellationToken cancellationToken)
+        public async Task<ICollection<PedidoDto>> Handle(SearchVueloQuery request, CancellationToken cancellationToken)
         {
 
             var pedidoList = await _pedidos

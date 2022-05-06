@@ -1,15 +1,15 @@
 ﻿using MediatR;
 using Microsoft.Extensions.Logging;
-using Pedidos.Application.Dto.Pedido;
-using Pedidos.Domain.Model.Pedidos;
+using Reservas.Application.Dto.Vuelo;
+using Reservas.Domain.Model.Reservas;
 using Reservas.Domain.Repositories;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Pedidos.Application.UseCases.Queries.Pedidos.GetPedidoById
+namespace Reservas.Application.UseCases.Queries.Pedidos.GetPedidoById
 {
-    public class GetPedidoByIdHandler : IRequestHandler<GetPedidoByIdQuery, PedidoDto>
+    public class GetPedidoByIdHandler : IRequestHandler<GetPedidoByIdQuery, VueloDto>
     {
         private readonly IVueloRepository _pedidoRepository;
         private readonly ILogger<GetPedidoByIdQuery> _logger;
@@ -20,14 +20,14 @@ namespace Pedidos.Application.UseCases.Queries.Pedidos.GetPedidoById
             _logger = logger;
         }
 
-        public async Task<PedidoDto> Handle(GetPedidoByIdQuery request, CancellationToken cancellationToken)
+        public async Task<VueloDto> Handle(GetPedidoByIdQuery request, CancellationToken cancellationToken)
         {
-            PedidoDto result = null;
+            VueloDto result = null;
             try
             {
-                Pedido objPedido = await _pedidoRepository.FindByIdAsync(request.Id);
+                Vuelos objPedido = await _pedidoRepository.FindByIdAsync(request.Id);
 
-                result = new PedidoDto()
+                result = new VueloDto()
                 {
                     Id = objPedido.Id,
                     NroPedido = objPedido.NroPedido,

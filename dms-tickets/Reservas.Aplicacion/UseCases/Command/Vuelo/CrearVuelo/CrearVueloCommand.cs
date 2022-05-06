@@ -3,8 +3,8 @@ using Pedidos.Application.Dto.Pedido;
 using System;
 using System.Collections.Generic;
 
-namespace Pedidos.Application.UseCases.Command.Pedidos.CrearPedido
-{
+namespace Reservas.Application.UseCases.Command.Pedidos.CrearVuelo
+{ 
     public class CrearVueloCommand : IRequest<Guid>
     {
         private CrearVueloCommand() { }

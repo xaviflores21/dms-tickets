@@ -1,10 +1,10 @@
 ﻿using MediatR;
-using Pedidos.Application.Dto.Pedido;
+using Reservas.Application.Dto.Vuelo;
 using System;
 
-namespace Pedidos.Application.UseCases.Queries.Pedidos.GetPedidoById
+namespace Reservas.Application.UseCases.Queries.Pedidos.GetPedidoById
 {
-    public class GetPedidoByIdQuery : IRequest<PedidoDto>
+    public class GetPedidoByIdQuery : IRequest<VueloDto>
     {
         public Guid Id { get; set; }
 

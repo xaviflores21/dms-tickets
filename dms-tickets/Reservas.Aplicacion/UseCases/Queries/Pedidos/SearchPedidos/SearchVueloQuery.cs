@@ -1,14 +1,14 @@
 ﻿using MediatR;
-using Pedidos.Application.Dto.Pedido;
+using Reservas.Application.Dto.Vuelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pedidos.Application.UseCases.Queries.Pedidos.GetPedidosCancelados
+namespace Reservas.Application.UseCases.Queries.Pedidos.GetPedidosCancelados
 {
-    public class SearchPedidosQuery : IRequest<ICollection<PedidoDto>>
+    public class SearchVueloQuery : IRequest<ICollection<VueloDto>>
     {
         public string NroPedido { get; set; }
     }

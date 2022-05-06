@@ -11,7 +11,7 @@ using Reservas.Domain.Repositories;
 using Reservas.Domain.Model.Reservas;
 using Reservas.Domain.ValueObjects;
 
-namespace Pedidos.Application.UseCases.Command.Pedidos.CrearPedido
+namespace Reservas.Application.UseCases.Command.Pedidos.CrearVuelo
 {
     public class CrearVueloHandler : IRequestHandler<CrearVueloCommand, Guid>
     {

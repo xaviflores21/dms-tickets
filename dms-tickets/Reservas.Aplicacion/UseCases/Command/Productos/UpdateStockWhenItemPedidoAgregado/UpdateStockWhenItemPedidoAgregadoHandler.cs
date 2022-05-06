@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Pedidos.Application.UseCases.Command.Productos.UpdateStockWhenItemPedidoAgregado
+namespace Reservas.Application.UseCases.Command.Productos.UpdateStockWhenItemPedidoAgregado
 {
   
     public class UpdateStockWhenItemPedidoAgregadoHandler : INotificationHandler<ItemPedidoAgregado>

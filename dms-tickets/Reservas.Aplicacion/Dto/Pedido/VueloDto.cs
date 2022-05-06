@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pedidos.Application.Dto.Pedido
+namespace Reservas.Application.Dto.Vuelo
 {
     public class VueloDto
     {
