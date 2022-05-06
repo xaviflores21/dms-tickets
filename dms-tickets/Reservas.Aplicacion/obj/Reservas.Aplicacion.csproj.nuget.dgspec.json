@@ -39,6 +39,16 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "MediatR.CommandQuery.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0.253, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

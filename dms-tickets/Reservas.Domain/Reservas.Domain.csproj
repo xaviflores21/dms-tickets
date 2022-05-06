@@ -8,4 +8,10 @@
     <ProjectReference Include="..\ShareKernel\ShareKernel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Event\" />
+    <Folder Include="Factories\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
 </Project>
