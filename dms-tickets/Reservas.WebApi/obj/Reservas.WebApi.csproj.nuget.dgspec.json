@@ -4,6 +4,206 @@
     "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.WebApi\\Reservas.WebApi.csproj": {}
   },
   "projects": {
+    "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Aplicacion\\Reservas.Aplicacion.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Aplicacion\\Reservas.Aplicacion.csproj",
+        "projectName": "Reservas.Aplicacion",
+        "projectPath": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Aplicacion\\Reservas.Aplicacion.csproj",
+        "packagesPath": "C:\\Users\\xavi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Aplicacion\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\xavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Domain\\Reservas.Domain.csproj": {
+                "projectPath": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Domain\\Reservas.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "MediatR.CommandQuery.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0.253, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Domain\\Reservas.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Domain\\Reservas.Domain.csproj",
+        "projectName": "Reservas.Domain",
+        "projectPath": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Domain\\Reservas.Domain.csproj",
+        "packagesPath": "C:\\Users\\xavi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\xavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\ShareKernel\\ShareKernel.csproj": {
+                "projectPath": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\ShareKernel\\ShareKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Infraestructura\\Reservas.Infraestructura.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Infraestructura\\Reservas.Infraestructura.csproj",
+        "projectName": "Reservas.Infraestructura",
+        "projectPath": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Infraestructura\\Reservas.Infraestructura.csproj",
+        "packagesPath": "C:\\Users\\xavi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Infraestructura\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\xavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Aplicacion\\Reservas.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Aplicacion\\Reservas.Aplicacion.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.WebApi\\Reservas.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +227,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Infraestructura\\Reservas.Infraestructura.csproj": {
+                "projectPath": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Infraestructura\\Reservas.Infraestructura.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -59,6 +263,60 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\ShareKernel\\ShareKernel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\ShareKernel\\ShareKernel.csproj",
+        "projectName": "ShareKernel",
+        "projectPath": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\ShareKernel\\ShareKernel.csproj",
+        "packagesPath": "C:\\Users\\xavi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\ShareKernel\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\xavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

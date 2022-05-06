@@ -338,6 +338,29 @@
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
         }
+      },
+      "Reservas.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ShareKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Reservas.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reservas.Domain.dll": {}
+        }
+      },
+      "ShareKernel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ShareKernel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShareKernel.dll": {}
+        }
       }
     }
   },
@@ -1043,12 +1066,23 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Reservas.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Reservas.Domain/Reservas.Domain.csproj",
+      "msbuildProject": "../Reservas.Domain/Reservas.Domain.csproj"
+    },
+    "ShareKernel/1.0.0": {
+      "type": "project",
+      "path": "../ShareKernel/ShareKernel.csproj",
+      "msbuildProject": "../ShareKernel/ShareKernel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "MediatR >= 10.0.1",
-      "MediatR.CommandQuery.EntityFrameworkCore >= 5.0.0.253"
+      "MediatR.CommandQuery.EntityFrameworkCore >= 5.0.0.253",
+      "Reservas.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1077,7 +1111,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Domain\\Reservas.Domain.csproj": {
+              "projectPath": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Domain\\Reservas.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

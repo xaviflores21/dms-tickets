@@ -8,25 +8,29 @@ using System.Threading.Tasks;
 
 namespace Reservas.Domain.ValueObjects
 {
-    public record NumeroTicket : ValueObject
+   // internal class Nro_Vuelo
+     public record Nro_Pago : ValueObject
     {
         public string Value { get; }
 
-        public NumeroTicket(string value)
+        public Nro_Pago(string value)
         {
             CheckRule(new StringNotNullOrEmptyRule(value));
+            //TODO: validar el formato del numero
             Value = value;
         }
 
-        public static implicit operator string(NumeroTicket value)
+
+        public static implicit operator string(Nro_Pago value)
         {
             return value.Value;
         }
 
-        public static implicit operator NumeroTicket(string value)
+        public static implicit operator Nro_Pago(string value)
         {
-            return new NumeroTicket(value);
+            return new Nro_Pago(value);
         }
+
 
 
     }

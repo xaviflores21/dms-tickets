@@ -9,4 +9,8 @@
     <PackageReference Include="MediatR.CommandQuery.EntityFrameworkCore" Version="5.0.0.253" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Reservas.Domain\Reservas.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
