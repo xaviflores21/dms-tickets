@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "D5qg7009Ni+AAImuculHB754XRkhadIQhYPKTMW4xpY6TYn83mB8jW4W5hZKtDKpCbw/uMTXirbQpkUfae8AZg==",
+  "dgSpecHash": "wZjH5w9g4DoM1msQCKlo7wRjxe1wVPGPpcjwbJprOjMm18zTZiSlgxUzgZZFkUk1SFpTfwihAWJeUPJY6UaO4w==",
   "success": true,
   "projectFilePath": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\ShareKernel\\ShareKernel.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\xavi\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\xavi\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Reservas.Application.UseCases.Command.Vuelos.UpdateStockWhenItemReservaAgregadoHandler
 {
-    public class UpdateStockWhenItemReservaAgregadoHandler : INotificationHandler<ItemReservaAgregada>
+    public class UpdateStockWhenItemReservaAgregadoHandler //: INotificationHandler<ItemReservaAgregada>
     {
         private readonly IVueloRepository _productoRepository;
 

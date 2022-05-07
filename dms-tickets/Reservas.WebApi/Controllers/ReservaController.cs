@@ -11,7 +11,7 @@ namespace Reservas.WebApi
 {
     [ApiController]
     [Route("/api/[controller]")]
-    public class ReservaController
+    public class ReservaController : ControllerBase
     {
         private readonly IMediator _mediator;
 
@@ -36,11 +36,6 @@ namespace Reservas.WebApi
             throw new NotImplementedException();
         }
 
-        private IActionResult BadRequest()
-        {
-            throw new NotImplementedException();
-        }
-
         [Route("{id:guid}")]
         [HttpGet]
         public async Task<IActionResult> GetPedidoById([FromRoute] GetReservaByIdQuery command)
@@ -51,11 +46,6 @@ namespace Reservas.WebApi
                 return NotFound();
 
             return Ok(result);
-        }
-
-        private IActionResult NotFound()
-        {
-            throw new NotImplementedException();
         }
 
         [Route("search")]

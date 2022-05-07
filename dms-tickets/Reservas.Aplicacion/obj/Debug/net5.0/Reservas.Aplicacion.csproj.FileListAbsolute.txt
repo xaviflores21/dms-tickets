@@ -1,5 +1,17 @@
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\bin\Debug\net5.0\Reservas.Aplicacion.deps.json
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\bin\Debug\net5.0\Reservas.Aplicacion.dll
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\bin\Debug\net5.0\Reservas.Aplicacion.pdb
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\bin\Debug\net5.0\Reservas.Domain.dll
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\bin\Debug\net5.0\ShareKernel.dll
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\bin\Debug\net5.0\Reservas.Domain.pdb
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\bin\Debug\net5.0\ShareKernel.pdb
 C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\obj\Debug\net5.0\Reservas.Aplicacion.csproj.AssemblyReference.cache
 C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\obj\Debug\net5.0\Reservas.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\obj\Debug\net5.0\Reservas.Aplicacion.AssemblyInfoInputs.cache
 C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\obj\Debug\net5.0\Reservas.Aplicacion.AssemblyInfo.cs
 C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\obj\Debug\net5.0\Reservas.Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\obj\Debug\net5.0\Reservas.Aplicacion.csproj.CopyComplete
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\obj\Debug\net5.0\Reservas.Aplicacion.dll
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\obj\Debug\net5.0\refint\Reservas.Aplicacion.dll
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\obj\Debug\net5.0\Reservas.Aplicacion.pdb
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Aplicacion\obj\Debug\net5.0\ref\Reservas.Aplicacion.dll

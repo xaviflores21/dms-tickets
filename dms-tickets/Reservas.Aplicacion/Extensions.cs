@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using MediatR.CommandQuery.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Reservas.Application.Services;
 using Reservas.Domain.Factories;
