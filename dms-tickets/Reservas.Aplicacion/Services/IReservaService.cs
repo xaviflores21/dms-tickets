@@ -8,6 +8,6 @@ namespace Reservas.Application.Services
 {
     public interface IReservaService 
     {
-        Task<string> GenerarNroPedidoAsync();
+        Task<string> GenerarNroReservaAsync();
     }
 }

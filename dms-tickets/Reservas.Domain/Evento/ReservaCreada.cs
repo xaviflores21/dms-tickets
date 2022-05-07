@@ -7,14 +7,23 @@ namespace Reservas.Domain.Evento
 {
     public record ReservaCreada : DomainEvent
     {
-        public Guid PedidoId { get; }
-        public string NroPedido { get; }
+        public Guid ReservaId { get; }
+        public NumReservaValue NroReserva { get; private set; }
+        public string Tipo_Pago { get; private set; }
+        public Guid num_ticket_reserva { get; private set; }
+        public Guid num_ticket_venta { get; private set; }
+        public PrecioValue MontoTotal { get; private set; }
+        public PrecioValue Deuda { get; private set; }
+        public string Descripcion { get; private set; }
+        public DateTime Fecha { get; private set; }
+        public string estado1 { get; private set; }
+        public string estado2 { get; private set; }
 
         public ReservaCreada(Guid pedidoId,
             string nroPedido) : base(DateTime.Now)
         {
-            PedidoId = pedidoId;
-            NroPedido = nroPedido;
+            ReservaId = pedidoId;
+            NroReserva = nroPedido;
 
         }
     }

@@ -9,31 +9,31 @@ namespace Reservas.Infraestructure.EF.Repository
 {
     public class VueloRepository : IVueloRepository
     {
-        public readonly DbSet<Vuelo> _productos;
+        public readonly DbSet<Vuelo> _vuelos;
 
         public VueloRepository(WriteDbContext context)
         {
-            _productos = context.Vuelo;
+            _vuelos = context.Vuelo;
         }
         public async Task CreateAsync(Vuelo obj)
         {
-            await _productos.AddAsync(obj);
+            await _vuelos.AddAsync(obj);
         }
 
         public async Task<Vuelo> FindByIdAsync(Guid id)
         {
-            return await _productos.SingleOrDefaultAsync(x => x.Id == id);
+            return await _vuelos.SingleOrDefaultAsync(x => x.Id == id);
         }
 
         public Task RemoveAsync(Vuelo obj)
         {
-            _productos.Remove(obj);
+            _vuelos.Remove(obj);
             return Task.CompletedTask;
         }
 
         public Task UpdateAsync(Vuelo obj)
         {
-            _productos.Update(obj);
+            _vuelos.Update(obj);
             return Task.CompletedTask;
         }
     }

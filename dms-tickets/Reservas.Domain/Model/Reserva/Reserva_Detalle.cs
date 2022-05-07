@@ -12,30 +12,29 @@ namespace Reservas.Domain.Model.Reserva
     public class Reserva_Detalle : Entity<Guid>
     {
         //TODO: Crear value objects para las propiedades
-        public Guid ProductoId { get; private set; }
-        public string Instrucciones { get; private set; }
-        public CantidadValue Cantidad { get; private set; }
+        public Guid VueloId { get; private set; }
+        public string Glosa { get; private set; }
         public PrecioValue Precio { get; private set; }
+        public CantidadValue Cantidad { get; private set; }
         public PrecioValue SubTotal { get; private set; }
 
-        internal Reserva_Detalle(Guid productoId, string instrucciones,
-            int cantidad, decimal precio)
+        internal Reserva_Detalle(Guid vueloId_, string glosa_, decimal precio_, int cantidad_)
         {
             Id = Guid.NewGuid();
-            ProductoId = productoId;
-            Instrucciones = instrucciones;
-            Cantidad = cantidad;
-            Precio = precio;
-            SubTotal = new PrecioValue(precio * cantidad);
+            VueloId = vueloId_;
+            Glosa = glosa_;
+            Precio = precio_;
+            Cantidad = cantidad_;
+            SubTotal = new PrecioValue(precio_ * cantidad_);
         }
 
         private Reserva_Detalle() { }
 
-        internal void ModificarPedido(int cantidad, decimal precio)
+        internal void ModificarReserva(decimal precio_, int cantidad_)
         {
-            Cantidad = cantidad;
-            Precio = precio;
-            SubTotal = precio * cantidad;
+            Precio = precio_;
+            Cantidad = cantidad_;
+            SubTotal = precio_ * cantidad_;
         }
     }
 }

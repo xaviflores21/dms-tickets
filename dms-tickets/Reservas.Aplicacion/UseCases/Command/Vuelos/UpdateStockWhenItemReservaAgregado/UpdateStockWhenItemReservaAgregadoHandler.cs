@@ -22,7 +22,7 @@ namespace Reservas.Application.UseCases.Command.Vuelos.UpdateStockWhenItemReserv
 
         public async Task Handle(ItemReservaAgregada notification, CancellationToken cancellationToken)
         {
-            Vuelo objProducto = await _productoRepository.FindByIdAsync(notification.ProductoId);
+            Vuelo objProducto = await _productoRepository.FindByIdAsync(notification.VueloId);
             objProducto.ReducirStock(notification.Cantidad);
             await _productoRepository.UpdateAsync(objProducto);
         }

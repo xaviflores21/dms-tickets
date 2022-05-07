@@ -14,17 +14,17 @@ namespace Reservas.Infraestructure.EF.UseCases.Queries.Reserva
     public class SearchReservaHandler :
         IRequestHandler<SearchReservaQuery, ICollection<ReservaDto>>
     {
-        private readonly DbSet<ReservaReadModel> _pedidos;
+        private readonly DbSet<ReservaReadModel> _reservas;
 
         public SearchReservaHandler(ReadDbContext context)
         {
-            _pedidos = context.Reserva;
+            _reservas = context.Reserva;
         }
 
         public async Task<ICollection<ReservaDto>> Handle(SearchReservaQuery request, CancellationToken cancellationToken)
         {
 
-            var pedidoList = await _pedidos
+            var pedidoList = await _reservas
                             .AsNoTracking()
                             .Include(x => x.Detalle)
                             .ThenInclude(x => x.Vuelo)

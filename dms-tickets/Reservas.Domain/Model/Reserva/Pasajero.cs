@@ -23,7 +23,6 @@ namespace Reservas.Domain.Model.Reserva
             NombreCompleto = nombre;
             Nacionalidad = nac;
             Telf = tel;
-
         }
     }
 }

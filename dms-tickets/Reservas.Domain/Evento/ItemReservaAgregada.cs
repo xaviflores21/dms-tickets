@@ -11,13 +11,17 @@ namespace Reservas.Domain.Evento
 {
     public record ItemReservaAgregada : DomainEvent
     {
-        public Guid ProductoId { get; }
-        public PrecioValue Precio { get; }
+        public Guid VueloId { get; }
+        public Guid NumVuelo { get; }
+        public string TipoAsiento { get; }
         public CantidadValue Cantidad { get; }
+        public PrecioValue Precio { get; }
 
-        public ItemReservaAgregada(Guid productoId, PrecioValue precio, CantidadValue cantidad) : base(DateTime.Now)
+        public ItemReservaAgregada(Guid vueloId_, Guid numVuelo_, string tAsiento_, CantidadValue cantidad, PrecioValue precio) : base(DateTime.Now)
         {
-            ProductoId = productoId;
+            VueloId = vueloId_;
+            NumVuelo = numVuelo_;
+            TipoAsiento = tAsiento_;
             Precio = precio;
             Cantidad = cantidad;
         }

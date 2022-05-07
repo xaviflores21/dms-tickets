@@ -30,8 +30,8 @@ namespace Reservas.Application.UseCases.Queries.Reserva.GetReservaById
                 result = new ReservaDto()
                 {
                     Id = objPedido.Id,
-                    NroPedido = objPedido.NroPedido,
-                    Total = objPedido.Total
+                    NroPedido = objPedido.NroReserva,
+                    Total = objPedido.MontoTotal
                 };
 
                 foreach (var item in objPedido.Detalle)
@@ -39,9 +39,9 @@ namespace Reservas.Application.UseCases.Queries.Reserva.GetReservaById
                     result.Detalle.Add(new DetalleReservaDto()
                     {
                         Cantidad = item.Cantidad,
-                        Instrucciones = item.Instrucciones,
+                        Instrucciones = item.Glosa,
                         Precio = item.Precio,
-                        ProductoId = item.ProductoId
+                        ProductoId = item.VueloId
                     });
                 }
             }

@@ -11,21 +11,21 @@ namespace Reservas.Infraestructure.EF.Config.WriteConfig
     {
         public void Configure(EntityTypeBuilder<Vuelo> builder)
         {
-            builder.ToTable("Producto");
+            builder.ToTable("Vuelo");
             builder.HasKey(x => x.Id);
 
-            builder.Property(x => x.Nombre)
+            builder.Property(x => x.NumVuelo)
                 .HasMaxLength(500)
-                .HasColumnName("nombre");
+                .HasColumnName("nun_vuelo");
 
             var precioConverter = new ValueConverter<PrecioValue, decimal>(
                 precioValue => precioValue.Value,
                 precio => new PrecioValue(precio)
             );
 
-            builder.Property(x => x.PrecioVenta)
+            builder.Property(x => x.PrecioVuelo)
                 .HasConversion(precioConverter)
-                .HasColumnName("precioVenta")
+                .HasColumnName("precioVuelo")
                 .HasPrecision(12, 2);
 
             var cantidadConverter = new ValueConverter<CantidadValue, int>(
@@ -33,9 +33,9 @@ namespace Reservas.Infraestructure.EF.Config.WriteConfig
                cantidad => new CantidadValue(cantidad)
            );
 
-            builder.Property(x => x.StockActual)
+            builder.Property(x => x.CantAsientos)
                 .HasConversion(cantidadConverter)
-                .HasColumnName("stockActual");
+                .HasColumnName("cantidad");
         }
     }
 }

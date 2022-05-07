@@ -38,7 +38,7 @@ namespace Reservas.WebApi
 
         [Route("{id:guid}")]
         [HttpGet]
-        public async Task<IActionResult> GetPedidoById([FromRoute] GetReservaByIdQuery command)
+        public async Task<IActionResult> GetReservaById([FromRoute] GetReservaByIdQuery command)
         {
             ReservaDto result = await _mediator.Send(command);
 

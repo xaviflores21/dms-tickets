@@ -20,7 +20,7 @@ namespace Reservas.Infraestructure
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
             var connectionString =
-                configuration.GetConnectionString("PedidoDbConnectionString");
+                configuration.GetConnectionString("ReservaDbConnectionString");
 
             services.AddDbContext<ReadDbContext>(context =>
                 context.UseSqlServer(connectionString));

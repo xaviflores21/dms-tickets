@@ -9,27 +9,27 @@ namespace Reservas.Infraestructure.EF.Repository
 {
     public class ReservaRepository : IReservaRepository
     {
-        public readonly DbSet<ReservaTicket> _pedidos;
+        public readonly DbSet<ReservaTicket> _reservas;
 
         public ReservaRepository(WriteDbContext context)
         {
-            _pedidos = context.Reserva;
+            _reservas = context.Reserva;
         }
 
         public async Task CreateAsync(ReservaTicket obj)
         {
-            await _pedidos.AddAsync(obj);
+            await _reservas.AddAsync(obj);
         }
 
         public async Task<ReservaTicket> FindByIdAsync(Guid id)
         {
-            return await _pedidos.Include("_detalle")
+            return await _reservas.Include("_detalle")
                     .SingleAsync(x => x.Id == id);
         }
 
         public Task UpdateAsync(ReservaTicket obj)
         {
-            _pedidos.Update(obj);
+            _reservas.Update(obj);
 
             return Task.CompletedTask;
         }

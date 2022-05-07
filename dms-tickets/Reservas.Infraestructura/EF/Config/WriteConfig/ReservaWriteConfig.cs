@@ -12,17 +12,17 @@ namespace Reservas.Infraestructure.EF.Config.WriteConfig
     {
         public void Configure(EntityTypeBuilder<ReservaTicket> builder)
         {
-            builder.ToTable("Pedido");
+            builder.ToTable("Reserva");
             builder.HasKey(x => x.Id);
 
-            var nroPedidoConverter = new ValueConverter<Nro_Vuelo, string>(
+            var nroPedidoConverter = new ValueConverter<NumReservaValue, string>(
                 nroPedidoValue => nroPedidoValue.Value,
-                nroPedido => new Nro_Vuelo(nroPedido)
+                nroPedido => new NumReservaValue(nroPedido)
             );
 
-            builder.Property(x => x.NroPedido)
+            builder.Property(x => x.NroReserva)
                 .HasConversion(nroPedidoConverter)
-                .HasColumnName("nroPedido")
+                .HasColumnName("nroReserva")
                 .HasMaxLength(6);
 
             var precioConverter = new ValueConverter<PrecioValue, decimal>(
@@ -30,9 +30,9 @@ namespace Reservas.Infraestructure.EF.Config.WriteConfig
                 precio => new PrecioValue(precio)
             );
 
-            builder.Property(x => x.Total)
+            builder.Property(x => x.MontoTotal)
                 .HasConversion(precioConverter)
-                .HasColumnName("total")
+                .HasColumnName("monto_total")
                 .HasPrecision(12, 2);
 
             builder.HasMany(typeof(Reserva_Detalle), "_detalle");
@@ -40,16 +40,16 @@ namespace Reservas.Infraestructure.EF.Config.WriteConfig
             builder.Ignore("_domainEvents");
             builder.Ignore(x => x.DomainEvents);
             builder.Ignore(x => x.Detalle);
-            builder.Ignore(x => x.ClienteId);
+            builder.Ignore(x => x.PasajeroId);
         }
 
         public void Configure(EntityTypeBuilder<Reserva_Detalle> builder)
         {
-            builder.ToTable("DetallePedido");
+            builder.ToTable("Reserva_Detalle");
             builder.HasKey(x => x.Id);
 
-            builder.Property(x => x.Instrucciones)
-               .HasColumnName("instrucciones")
+            builder.Property(x => x.Glosa)
+               .HasColumnName("glosa")
                .HasMaxLength(500);
 
             var precioConverter = new ValueConverter<PrecioValue, decimal>(

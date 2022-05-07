@@ -9,7 +9,7 @@ namespace Reservas.Infraestructure.EF.Config.ReadConfig
     {
         public void Configure(EntityTypeBuilder<VueloReadModel> builder)
         {
-            builder.ToTable("Producto");
+            builder.ToTable("Vuelo");
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.Nombre)

@@ -9,15 +9,15 @@ namespace Reservas.Infraestructure.EF.Config.ReadConfig
     {
         public void Configure(EntityTypeBuilder<ReservaReadModel> builder)
         {
-            builder.ToTable("Pedido");
+            builder.ToTable("Reserva");
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.NroPedido)
-                .HasColumnName("nroPedido")
+                .HasColumnName("nroReserva")
                 .HasMaxLength(6);
 
             builder.Property(x => x.Total)
-                .HasColumnName("total")
+                .HasColumnName("monto_total")
                 .HasColumnType("decimal")
                 .HasPrecision(12, 2);
 
@@ -28,11 +28,11 @@ namespace Reservas.Infraestructure.EF.Config.ReadConfig
 
         public void Configure(EntityTypeBuilder<DetalleReservaReadModel> builder)
         {
-            builder.ToTable("DetallePedido");
+            builder.ToTable("Reserva_Detalle");
             builder.HasKey(x => x.Id);
 
             builder.Property(x => x.Instrucciones)
-                .HasColumnName("instrucciones")
+                .HasColumnName("glosa")
                 .HasMaxLength(500);
 
             builder.Property(x => x.Precio)

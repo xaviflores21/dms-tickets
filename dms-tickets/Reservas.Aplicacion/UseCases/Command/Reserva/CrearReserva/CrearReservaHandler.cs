@@ -44,7 +44,7 @@ namespace Reservas.Application.UseCases.Command.Reserva.CrearReserva
                     objPedido.AgregarItem(item.ProductoId, item.Cantidad, item.Precio, item.Instrucciones);
                 }
 
-                objPedido.ConsolidarPedido();
+                objPedido.ConsolidarReserva();
 
                 await _pedidoRepository.CreateAsync(objPedido);
 

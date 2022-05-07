@@ -13,32 +13,34 @@ namespace Reservas.Domain.Model.Reserva
 {
     public class Vuelo : AggregateRoot<Guid>
     {
-        public string Nombre { get; private set; }
-        public PrecioValue PrecioVenta { get; private set; }
-        public CantidadValue StockActual { get; private set; }
+        public string NumVuelo { get; private set; }
+        public string TipoAsiento { get; private set; }
+        public CantidadValue CantAsientos { get; private set; }
+        public PrecioValue PrecioVuelo { get; private set; }
 
         private Vuelo()
         {
-            PrecioVenta = 0;
-            StockActual = 0;
+            CantAsientos = 0;
+            PrecioVuelo = 0;
         }
 
-        public Vuelo(string nombre, PrecioValue precioVenta, CantidadValue stockActual)
+        public Vuelo(string nvuelo_, string tasiento_, PrecioValue pVuelo_, CantidadValue cAsientos_)
         {
             Id = Guid.NewGuid();
-            Nombre = nombre;
-            PrecioVenta = precioVenta;
-            StockActual = stockActual;
+            NumVuelo = nvuelo_;
+            TipoAsiento = tasiento_;
+            CantAsientos = cAsientos_;
+            PrecioVuelo = pVuelo_;
         }
 
         public void ReducirStock(CantidadValue cantidad)
         {
-            int stockResultante = StockActual - cantidad;
+            int stockResultante = CantAsientos - cantidad;
             if (stockResultante < 0)
             {
-                throw new BussinessRuleValidationException("La cantidad de stock actual es insuficiente");
+                throw new BussinessRuleValidationException("No hay asientos disponibles...");
             }
-            StockActual = stockResultante;
+            CantAsientos = stockResultante;
         }
     }
 }
