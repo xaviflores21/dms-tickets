@@ -37,7 +37,7 @@ namespace Reservas.Application.UseCases.Command.Reserva.CrearReserva
             try
             {
                 string nroPedido = await _pedidoService.GenerarNroPedidoAsync();
-                Reserva objPedido = _pedidoFactory.Create(nroPedido);
+                ReservaTicket objPedido = _pedidoFactory.Create(nroPedido);
 
                 foreach (var item in request.Detalle)
                 {

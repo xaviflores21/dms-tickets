@@ -5,7 +5,7 @@ using Reservas.Application.Dto.Reserva;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-
+using Reservas.Domain.Model.Reserva;
 
 namespace Reservas.Application.UseCases.Queries.Reserva.GetReservaById
 {
@@ -25,7 +25,7 @@ namespace Reservas.Application.UseCases.Queries.Reserva.GetReservaById
             ReservaDto result = null;
             try
             {
-                Reserva objPedido = await _pedidoRepository.FindByIdAsync(request.Id);
+                ReservaTicket objPedido = await _pedidoRepository.FindByIdAsync(request.Id);
 
                 result = new ReservaDto()
                 {
