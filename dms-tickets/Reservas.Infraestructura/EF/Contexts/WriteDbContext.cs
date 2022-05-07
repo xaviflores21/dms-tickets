@@ -31,8 +31,8 @@ namespace Reservas.Infraestructure.EF.Contexts
 
 
             modelBuilder.Ignore<DomainEvent>();
-            modelBuilder.Ignore<VueloCreado>();
-            modelBuilder.Ignore<Item_Vuelo_Agregado>();
+            modelBuilder.Ignore<ReservaCreada>();
+            modelBuilder.Ignore<ItemReservaAgregada>();
         }
     }
 }

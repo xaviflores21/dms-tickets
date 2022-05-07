@@ -13,82 +13,32 @@ namespace Reservas.Domain.Model.Reservas
 {
     public class Vuelo : AggregateRoot<Guid>
     {
-        // public class Pedido : AggregateRoot<Guid>
+        public string Nombre { get; private set; }
+        public PrecioValue PrecioVenta { get; private set; }
+        public CantidadValue StockActual { get; private set; }
 
-        // public Guid ClienteId { get; private set; }
-        // public int NroVuelo { get; private set; }
-        public Nro_Vuelo NroVuelo { get; private set; }
-        public string Tipo_Asiento { get; private set; }
-        public static CantidadValue Cantidad { get; private set; }
-        public static PrecioValue Precio { get; private set; }
-        public Guid idPasaje { get; private set; }
-
-
-
-        public Vuelo()
+        private Vuelo()
         {
-            Precio = 0;
-            Cantidad = 0;
+            PrecioVenta = 0;
+            StockActual = 0;
         }
 
-        internal Vuelo(Nro_Vuelo _Numero_, string _Tipo_Asiento_, CantidadValue _Cantidad_, PrecioValue _Precio_, Guid _Pasaje_)
+        public Vuelo(string nombre, PrecioValue precioVenta, CantidadValue stockActual)
         {
-            NroVuelo = _Numero_;
-            Tipo_Asiento = _Tipo_Asiento_;
-            Cantidad = _Cantidad_;
-            Precio = _Precio_;
-            idPasaje = _Pasaje_;
+            Id = Guid.NewGuid();
+            Nombre = nombre;
+            PrecioVenta = precioVenta;
+            StockActual = stockActual;
         }
 
-
-        private readonly ICollection<Reserva_Pago> _reservaPago;
-
-        public IReadOnlyCollection<Reserva_Pago> ReservaPago
+        public void ReducirStock(CantidadValue cantidad)
         {
-            get
+            int stockResultante = StockActual - cantidad;
+            if (stockResultante < 0)
             {
-                return new ReadOnlyCollection<Reserva_Pago>(_reservaPago.ToList());
+                throw new BussinessRuleValidationException("La cantidad de stock actual es insuficiente");
             }
-        }
-
-        public void ReducirAsientos(CantidadValue cantidad_)
-        {
-            int cantidadAsientosResultantes = Cantidad - cantidad_;
-            if (cantidadAsientosResultantes < 0)
-            {
-                throw new BussinessRuleValidationException("La cantidad de asientos es insuficiente");
-            }
-            Cantidad = cantidadAsientosResultantes;
-        }
-
-
-        internal void ModificarVuelo(int cantidad_, decimal precio_)
-        {
-            Cantidad = cantidad_;
-            Precio = precio_;
-        }
-
-        private readonly ICollection<Vuelo> _vuelos;
-
-        public void AgregarItem(Nro_Vuelo _Numero_, string _Tipo_Asiento_, int _Cantidad_, decimal _Precio_, Guid _Pasaje_)
-        {
-            var reservaPagos = _vuelos.FirstOrDefault(x => NroVuelo == _Numero_);
-            if (reservaPagos is null)
-            {
-                reservaPagos = new Vuelo(_Numero_, _Tipo_Asiento_, _Cantidad_, _Precio_, _Pasaje_);
-                _vuelos.Add(reservaPagos);
-            }
-            else
-            {
-                reservaPagos.ModificarVuelo(_Cantidad_, _Precio_);
-            }
-            AddDomainEvent(new Item_Vuelo_Agregado(_Numero_, _Tipo_Asiento_, _Cantidad_, _Precio_, _Pasaje_));
-        }
-
-        public void ConsolidarVuelo()
-        {
-            var evento = new VueloCreado(NroVuelo, Tipo_Asiento, Cantidad, Precio, idPasaje);
-            AddDomainEvent(evento);
+            StockActual = stockResultante;
         }
     }
 }

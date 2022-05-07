@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Reservas.Application.Services
 {
-    public interface IVueloService 
+    public class ReservaService : IReservaService
     {
-        Task<string> GenerarNroVueloAsync();
-
+        public Task<string> GenerarNroPedidoAsync() => Task.FromResult("ABC");
     }
 }

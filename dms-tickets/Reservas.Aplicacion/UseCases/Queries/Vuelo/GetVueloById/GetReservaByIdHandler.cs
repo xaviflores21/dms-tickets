@@ -1,32 +1,35 @@
 ﻿using MediatR;
 using Microsoft.Extensions.Logging;
-using Reservas.Application.Dto.Vuelo;
+using Reservas.Application.UseCases.Queries.Vuelo.GetVueloById;
 using Reservas.Domain.Repositories;
+using Reservas.Domain.Model.Reservas;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Reservas.Application.Dto.Reserva;
+using Pedidos.Application.Dto.Reserva;
 
 namespace Reservas.Application.UseCases.Queries.Vuelo.GetPedidoById
 {
-    public class GetPedidoByIdHandler : IRequestHandler<GetPedidoByIdQuery, VueloDto>
+    public class GetReservaByIdHandler : IRequestHandler<GetReservaByIdQuery, ReservaDto>
     {
-        private readonly IVueloRepository _pedidoRepository;
-        private readonly ILogger<GetPedidoByIdQuery> _logger;
+        private readonly IReservaRepository _pedidoRepository;
+        private readonly ILogger<GetReservaByIdQuery> _logger;
 
-        public GetPedidoByIdHandler(IVueloRepository pedidoRepository, ILogger<GetPedidoByIdQuery> logger)
+        public GetReservaByIdHandler(IReservaRepository pedidoRepository, ILogger<GetReservaByIdQuery> logger)
         {
             _pedidoRepository = pedidoRepository;
             _logger = logger;
         }
 
-        public async Task<VueloDto> Handle(GetPedidoByIdQuery request, CancellationToken cancellationToken)
+        public async Task<ReservaDto> Handle(GetReservaByIdQuery request, CancellationToken cancellationToken)
         {
-            VueloDto result = null;
+            ReservaDto result = null;
             try
             {
-                Vuelo objPedido = await _pedidoRepository.FindByIdAsync(request.Id);
+                Reserva objPedido = await _pedidoRepository.FindByIdAsync(request.Id);
 
-                result = new VueloDto()
+                result = new ReservaDto()
                 {
                     Id = objPedido.Id,
                     NroPedido = objPedido.NroPedido,
@@ -35,7 +38,7 @@ namespace Reservas.Application.UseCases.Queries.Vuelo.GetPedidoById
 
                 foreach (var item in objPedido.Detalle)
                 {
-                    result.Detalle.Add(new DetallePedidoDto()
+                    result.Detalle.Add(new DetalleReservaDto()
                     {
                         Cantidad = item.Cantidad,
                         Instrucciones = item.Instrucciones,

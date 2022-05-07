@@ -27,7 +27,7 @@ namespace Reservas.Infraestructure
             services.AddDbContext<WriteDbContext>(context => 
                 context.UseSqlServer(connectionString));
 
-            services.AddScoped<IVueloRepository, VueloRepository>();
+            services.AddScoped<IReservaRepository, VueloRepository>();
            // services.AddScoped<IProductoRepository, ProductoRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 

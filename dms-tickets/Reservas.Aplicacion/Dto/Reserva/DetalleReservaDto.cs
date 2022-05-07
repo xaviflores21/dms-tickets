@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pedidos.Application.Dto.Pedido
+namespace Pedidos.Application.Dto.Reserva
 {
-    public class DetalleVueloDto
+    public class DetalleReservaDto
     {
         public Guid ProductoId { get; set; }
         public int Cantidad { get; set; }
