@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Pedidos.Infraestructure.EF.ReadModel
+namespace Reservas.Infraestructure.EF.ReadModel
 {
-    public class DetallePedidoReadModel
+    public class DetalleReservaReadModel
     {
         public Guid Id { get; set; }
         public string Instrucciones { get; set; }
@@ -10,9 +10,9 @@ namespace Pedidos.Infraestructure.EF.ReadModel
         public decimal Precio { get; set; }
         public decimal SubTotal { get; set; }
 
-        public VueloReadModel Pedido { get; set; }
+        public ReservaReadModel Reserva { get; set; }
 
-        public ProductoReadModel Producto { get; set; }
+        public VueloReadModel Vuelo { get; set; }
 
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "XV3ePpwJgKJKhntSpHQgled6/mPex5cUb0FoEMueLzwB9hY3eRyxIBb1Qnaq1+3Z29sHQyb6AsL2N2+P7rF5ag==",
+  "dgSpecHash": "rDZnSKV8IRLS3hVDP9Mjn14U2dxfjeatdsqoJ00KdQ38Z4d59OivjGClDUeoDvRZimQ9g6O6b+CxgPm8e94glQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\xavi\\Documents\\GitHub\\dms-tickets\\dms-tickets\\Reservas.Infraestructura\\Reservas.Infraestructura.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\xavi\\.nuget\\packages\\mediatr.commandquery\\5.0.0.253\\mediatr.commandquery.5.0.0.253.nupkg.sha512",
     "C:\\Users\\xavi\\.nuget\\packages\\mediatr.commandquery.entityframeworkcore\\5.0.0.253\\mediatr.commandquery.entityframeworkcore.5.0.0.253.nupkg.sha512",
     "C:\\Users\\xavi\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\xavi\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\5.1.0\\mediatr.extensions.microsoft.dependencyinjection.5.1.0.nupkg.sha512",
     "C:\\Users\\xavi\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.6\\microsoft.aspnetcore.jsonpatch.3.1.6.nupkg.sha512",
     "C:\\Users\\xavi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\xavi\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

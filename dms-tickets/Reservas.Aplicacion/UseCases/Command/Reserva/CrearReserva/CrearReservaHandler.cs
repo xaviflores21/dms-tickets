@@ -1,11 +1,12 @@
 ﻿using MediatR;
 using Reservas.Application.Services;
 using Reservas.Domain.Factories;
-using Reservas.Domain.Model.Reservas;
+using Reservas.Domain.Model.Reserva;
+using Reservas.Application.Dto.Reserva;
+using Reservas.Domain.Repositories;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Reservas.Domain.Repositories;
 using Microsoft.Extensions.Logging;
 
 namespace Reservas.Application.UseCases.Command.Reserva.CrearReserva
@@ -54,7 +55,7 @@ namespace Reservas.Application.UseCases.Command.Reserva.CrearReserva
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error al crear pedido");
+                _logger.LogError(ex, "Error al crear la Reserva");
             }
             return Guid.Empty;
         }

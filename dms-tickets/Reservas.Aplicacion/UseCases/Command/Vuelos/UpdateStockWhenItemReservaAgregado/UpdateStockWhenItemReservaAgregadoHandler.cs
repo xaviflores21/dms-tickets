@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using Reservas.Domain.Evento;
-using Reservas.Domain.Model.Reservas;
+using Reservas.Domain.Model.Reserva;
 using Reservas.Domain.Repositories;
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Reservas.Application.UseCases.Command.Vuelos.UpdateStockWhenItemReservaAgregado
+namespace Reservas.Application.UseCases.Command.Vuelos.UpdateStockWhenItemReservaAgregadoHandler
 {
     public class UpdateStockWhenItemReservaAgregadoHandler : INotificationHandler<ItemReservaAgregada>
     {

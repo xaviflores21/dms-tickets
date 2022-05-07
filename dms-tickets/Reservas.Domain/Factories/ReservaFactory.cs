@@ -1,13 +1,13 @@
 ﻿ 
-using Reservas.Domain.Model.Reservas;
+using Reservas.Domain.Model.Reserva;
 
 namespace Reservas.Domain.Factories
 {
     public class ReservaFactory : IReservaFactory
     {
-        public Reserva Create(string nroPedido)
+        public ReservaTicket Create(string nroPedido)
         {
-            return new Reserva(nroPedido);
+            return new ReservaTicket(nroPedido);
         }
     }
 }

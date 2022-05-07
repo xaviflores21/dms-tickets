@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Reservas.Application.UseCases.Queries.Vuelo.SearchVuelos
+namespace Reservas.Application.UseCases.Queries.Reserva.SearchReserva
 {
     public class SearchReservaQuery : IRequest<ICollection<ReservaDto>>
     {

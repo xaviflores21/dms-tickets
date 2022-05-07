@@ -1,15 +1,13 @@
 ﻿using MediatR;
 using Microsoft.Extensions.Logging;
-using Reservas.Application.UseCases.Queries.Vuelo.GetVueloById;
 using Reservas.Domain.Repositories;
-using Reservas.Domain.Model.Reservas;
+using Reservas.Application.Dto.Reserva;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Reservas.Application.Dto.Reserva;
-using Pedidos.Application.Dto.Reserva;
 
-namespace Reservas.Application.UseCases.Queries.Vuelo.GetPedidoById
+
+namespace Reservas.Application.UseCases.Queries.Reserva.GetReservaById
 {
     public class GetReservaByIdHandler : IRequestHandler<GetReservaByIdQuery, ReservaDto>
     {

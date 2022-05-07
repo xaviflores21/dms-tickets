@@ -1,13 +1,13 @@
 ﻿ 
-using Reservas.Domain.Model.Reservas;
+using Reservas.Domain.Model.Reserva;
 using ShareKernel.Core;
 using System;
 using System.Threading.Tasks;
 
 namespace Reservas.Domain.Repositories
 {
-    public interface IReservaRepository : IRepository<Reserva, Guid>
+    public interface IReservaRepository : IRepository<ReservaTicket, Guid>
     {
-        Task UpdateAsync(Reserva obj);
+        Task UpdateAsync(ReservaTicket obj);
     }
 }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Reservas.Domain.Model.Reservas
+namespace Reservas.Domain.Model.Reserva
 {
     public class Reserva_Detalle : Entity<Guid>
     {

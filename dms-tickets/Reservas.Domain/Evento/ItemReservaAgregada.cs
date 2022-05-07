@@ -1,4 +1,4 @@
-﻿using Reservas.Domain.Model.Reservas;
+﻿using Reservas.Domain.Model.Reserva;
 using Reservas.Domain.Model.ValueObjects;
 using Reservas.Domain.ValueObjects;
 using ShareKernel.Core;

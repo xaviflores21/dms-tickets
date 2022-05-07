@@ -1,15 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Pedidos.Domain.Event;
-using Pedidos.Infraestructure.EF.Config.ReadConfig;
-using Pedidos.Infraestructure.EF.ReadModel;
+using Reservas.Domain.Evento;
+using Reservas.Infraestructure.EF.Config.ReadConfig;
+using Reservas.Infraestructure.EF.ReadModel;
 using ShareKernel.Core;
 
-namespace Pedidos.Infraestructure.EF.Contexts
+namespace Reservas.Infraestructure.EF.Contexts
 {
     public class ReadDbContext : DbContext
     {
-        public virtual DbSet<VueloReadModel> Pedido { set; get; }
-        public virtual DbSet<ProductoReadModel> Producto { set; get; }
+        public virtual DbSet<ReservaReadModel> Reserva { set; get; }
+        public virtual DbSet<VueloReadModel> Vuelo { set; get; }
 
         public ReadDbContext(DbContextOptions<ReadDbContext> options) : base(options)
         {
@@ -19,16 +19,16 @@ namespace Pedidos.Infraestructure.EF.Contexts
         {
             base.OnModelCreating(modelBuilder);
 
-            var pedidoConfig = new VueloReadConfig();
-            modelBuilder.ApplyConfiguration<VueloReadModel>(pedidoConfig);
-            modelBuilder.ApplyConfiguration<DetallePedidoReadModel>(pedidoConfig);
+            var pedidoConfig = new ReservaReadConfig();
+            modelBuilder.ApplyConfiguration<ReservaReadModel>(pedidoConfig);
+            modelBuilder.ApplyConfiguration<DetalleReservaReadModel>(pedidoConfig);
 
-            var productoConfig = new ProductoReadConfig();
-            modelBuilder.ApplyConfiguration<ProductoReadModel>(productoConfig);
+            var productoConfig = new VueloReadConfig();
+            modelBuilder.ApplyConfiguration<VueloReadModel>(productoConfig);
 
             modelBuilder.Ignore<DomainEvent>();
-            modelBuilder.Ignore<PedidoCreado>();
-            modelBuilder.Ignore<ItemPedidoAgregado>();
+            modelBuilder.Ignore<ReservaCreada>();
+            modelBuilder.Ignore<ItemReservaAgregada>();
         }
     }
 }

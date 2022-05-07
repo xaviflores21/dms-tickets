@@ -76,6 +76,19 @@
           "lib/netstandard2.0/MediatR.Contracts.dll": {}
         }
       },
+      "MediatR.Extensions.Microsoft.DependencyInjection/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "MediatR": "5.1.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.JsonPatch/3.1.6": {
         "type": "package",
         "dependencies": {
@@ -450,6 +463,18 @@
         "lib/netstandard2.0/MediatR.Contracts.xml",
         "mediatr.contracts.1.0.1.nupkg.sha512",
         "mediatr.contracts.nuspec"
+      ]
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/5.1.0": {
+      "sha512": "iFz9og0gyUUsbG9TBQfSxrnkOU6A9ZckGoswteeA+ip5Qvk0Bk60qJ5+AhXH/RCTxkSTNqQ3jP/gTmIWnFURsg==",
+      "type": "package",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/5.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll",
+        "mediatr.extensions.microsoft.dependencyinjection.5.1.0.nupkg.sha512",
+        "mediatr.extensions.microsoft.dependencyinjection.nuspec"
       ]
     },
     "Microsoft.AspNetCore.JsonPatch/3.1.6": {
@@ -1082,6 +1107,7 @@
     "net5.0": [
       "MediatR >= 10.0.1",
       "MediatR.CommandQuery.EntityFrameworkCore >= 5.0.0.253",
+      "MediatR.Extensions.Microsoft.DependencyInjection >= 5.1.0",
       "Reservas.Domain >= 1.0.0"
     ]
   },
@@ -1135,6 +1161,10 @@
           "MediatR.CommandQuery.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.0.253, )"
+          },
+          "MediatR.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[5.1.0, )"
           }
         },
         "imports": [

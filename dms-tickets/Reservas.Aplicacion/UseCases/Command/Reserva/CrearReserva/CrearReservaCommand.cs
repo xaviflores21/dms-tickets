@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using Pedidos.Application.Dto.Reserva;
+using Reservas.Application.Dto.Reserva;
 using System;
 using System.Collections.Generic;
 

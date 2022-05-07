@@ -8,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Reservas.Domain.Model.Reservas
+namespace Reservas.Domain.Model.Reserva
 {
-    public class Reserva : AggregateRoot<Guid>
+    public class ReservaTicket : AggregateRoot<Guid>
     {
         public Guid ClienteId { get; private set; }
         public Nro_Vuelo NroPedido { get; private set; }
@@ -26,9 +26,9 @@ namespace Reservas.Domain.Model.Reservas
             }
         }
 
-        private Reserva() { }
+        private ReservaTicket() { }
 
-        internal Reserva(string nroPedido)
+        internal ReservaTicket(string nroPedido)
         {
             Id = Guid.NewGuid();
             NroPedido = nroPedido;

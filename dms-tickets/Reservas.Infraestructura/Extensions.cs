@@ -19,16 +19,16 @@ namespace Reservas.Infraestructure
             services.AddApplication();
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
-            var connectionString = 
+            var connectionString =
                 configuration.GetConnectionString("PedidoDbConnectionString");
 
-            services.AddDbContext<ReadDbContext>(context => 
+            services.AddDbContext<ReadDbContext>(context =>
                 context.UseSqlServer(connectionString));
-            services.AddDbContext<WriteDbContext>(context => 
+            services.AddDbContext<WriteDbContext>(context =>
                 context.UseSqlServer(connectionString));
 
-            services.AddScoped<IReservaRepository, VueloRepository>();
-           // services.AddScoped<IProductoRepository, ProductoRepository>();
+            services.AddScoped<IReservaRepository, ReservaRepository>();
+            services.AddScoped<IVueloRepository, VueloRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 

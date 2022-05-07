@@ -1,12 +1,12 @@
 ﻿using MediatR;
-using Pedidos.Domain.Repositories;
-using Pedidos.Infraestructure.EF.Contexts;
+using Reservas.Domain.Repositories;
+using Reservas.Infraestructure.EF.Contexts;
 using ShareKernel.Core;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Pedidos.Infraestructure.EF
+namespace Reservas.Infraestructure.EF
 {
     public class UnitOfWork : IUnitOfWork
     {

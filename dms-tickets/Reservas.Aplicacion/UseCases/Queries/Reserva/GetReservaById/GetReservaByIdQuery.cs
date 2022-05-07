@@ -2,7 +2,7 @@
 using Reservas.Application.Dto.Reserva;
 using System;
 
-namespace Reservas.Application.UseCases.Queries.Vuelo.GetVueloById
+namespace Reservas.Application.UseCases.Queries.Reserva.GetReservaById
 {
     public class GetReservaByIdQuery : IRequest<ReservaDto>
     {

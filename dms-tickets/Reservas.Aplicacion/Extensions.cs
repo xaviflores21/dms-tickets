@@ -11,7 +11,7 @@ namespace Reservas.Application
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
-            services.AddMediator(Assembly.GetExecutingAssembly());
+            services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddTransient<IReservaService, ReservaService>();
             services.AddTransient<IReservaFactory, ReservaFactory>();
 

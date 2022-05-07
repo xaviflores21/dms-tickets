@@ -1,4 +1,4 @@
-﻿using Reservas.Domain.Model.Reservas;
+﻿using Reservas.Domain.Model.Reserva;
 using ShareKernel.Core;
 using System;
 using System.Threading.Tasks;

@@ -9,7 +9,7 @@ using Reservas.Domain.Evento;
 using Reservas.Domain.Model.ValueObjects;
 using System.Collections.ObjectModel;
 
-namespace Reservas.Domain.Model.Reservas
+namespace Reservas.Domain.Model.Reserva
 {
     public class Vuelo : AggregateRoot<Guid>
     {

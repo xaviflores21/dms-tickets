@@ -51,6 +51,10 @@
             "MediatR.CommandQuery.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0.253, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.1.0, )"
             }
           },
           "imports": [
@@ -183,6 +187,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.16, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
