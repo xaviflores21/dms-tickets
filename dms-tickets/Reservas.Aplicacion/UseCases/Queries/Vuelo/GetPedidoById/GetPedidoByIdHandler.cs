@@ -1,13 +1,12 @@
 ﻿using MediatR;
 using Microsoft.Extensions.Logging;
 using Reservas.Application.Dto.Vuelo;
-using Reservas.Domain.Model.Reservas;
 using Reservas.Domain.Repositories;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Reservas.Application.UseCases.Queries.Pedidos.GetPedidoById
+namespace Reservas.Application.UseCases.Queries.Vuelo.GetPedidoById
 {
     public class GetPedidoByIdHandler : IRequestHandler<GetPedidoByIdQuery, VueloDto>
     {
@@ -25,7 +24,7 @@ namespace Reservas.Application.UseCases.Queries.Pedidos.GetPedidoById
             VueloDto result = null;
             try
             {
-                Vuelos objPedido = await _pedidoRepository.FindByIdAsync(request.Id);
+                Vuelo objPedido = await _pedidoRepository.FindByIdAsync(request.Id);
 
                 result = new VueloDto()
                 {

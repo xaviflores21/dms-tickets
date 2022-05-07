@@ -44,7 +44,7 @@ namespace Pedidos.Infraestructure.EF.UseCases.Queries.Pedidos
 
                 foreach (var item in objPedido.Detalle)
                 {
-                    pedidoDto.Detalle.Add(new DetallePedidoDto()
+                    pedidoDto.Detalle.Add(new DetalleVueloDto()
                     {
                         Cantidad = item.Cantidad,
                         Instrucciones = item.Instrucciones,

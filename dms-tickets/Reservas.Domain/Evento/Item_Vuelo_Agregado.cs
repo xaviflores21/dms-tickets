@@ -1,4 +1,5 @@
 ﻿using Reservas.Domain.Model.Reservas;
+using Reservas.Domain.Model.ValueObjects;
 using Reservas.Domain.ValueObjects;
 using ShareKernel.Core;
 using System;
@@ -9,17 +10,16 @@ using System.Threading.Tasks;
 
 namespace Reservas.Domain.Evento
 {
-   
     public record Item_Vuelo_Agregado : DomainEvent
     {
- 
-        public Nro_Vuelo NroVuelo { get; private set; }
-        public string Tipo_Asiento { get; private set; }
-        public PrecioValue Cantidad { get; private set; }
-        public PrecioValue Precio { get; private set; }
-        public Pasaje _Pasaje { get; private set; }
-      
-        public Item_Vuelo_Agregado(Nro_Vuelo _Numero_, string _Tipo_Asiento_, PrecioValue _Cantidad_, PrecioValue _Precio_, Pasaje _Pasaje_) : base(DateTime.Now)
+        public Guid _Pasaje { get; }
+        public Nro_Vuelo NroVuelo { get; }
+        public string Tipo_Asiento { get; }
+        public CantidadValue Cantidad { get; }
+        public PrecioValue Precio { get; }
+        
+
+        public Item_Vuelo_Agregado(Nro_Vuelo _Numero_, string _Tipo_Asiento_, int _Cantidad_, decimal _Precio_, Guid _Pasaje_) : base(DateTime.Now)
         {
             NroVuelo = _Numero_;
             Tipo_Asiento = _Tipo_Asiento_;

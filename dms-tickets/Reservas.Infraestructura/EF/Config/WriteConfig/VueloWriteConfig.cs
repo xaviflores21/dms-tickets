@@ -13,7 +13,7 @@ namespace Pedidos.Infraestructure.EF.Config.WriteConfig
     public class VueloWriteConfig : IEntityTypeConfiguration<Pedido>,
         IEntityTypeConfiguration<DetallePedido>
     {
-        public void Configure(EntityTypeBuilder<Vuelos> builder)
+        public void Configure(EntityTypeBuilder<Vuelo> builder)
         {
             builder.ToTable("Vuelo");
             builder.HasKey(x => x.Id);

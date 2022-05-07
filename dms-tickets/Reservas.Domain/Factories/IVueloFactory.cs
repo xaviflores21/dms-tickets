@@ -1,11 +1,12 @@
 ﻿ 
 using Reservas.Domain.Model.Reservas;
 using Reservas.Domain.ValueObjects;
+using System;
 
 namespace Reservas.Domain.Factories
 {
     public interface IVueloFactory
     {
-        Vuelos Create(Nro_Vuelo _Numero_, string _Tipo_Asiento_, PrecioValue _Cantidad_, PrecioValue _Precio_, Pasaje _Pasaje_);
+        Vuelo Create(Nro_Vuelo _Numero_, string _Tipo_Asiento_, int _Cantidad_, decimal _Precio_, Guid _Pasaje_);
     }
 }

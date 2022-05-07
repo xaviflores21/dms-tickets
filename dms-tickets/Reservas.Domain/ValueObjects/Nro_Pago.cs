@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace Reservas.Domain.ValueObjects
 {
-   // internal class Nro_Vuelo
-     public record Nro_Pago : ValueObject
+    // internal class Nro_Vuelo
+    public record Nro_Pago : ValueObject
     {
         public string Value { get; }
 

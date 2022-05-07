@@ -1,14 +1,11 @@
 ﻿using MediatR;
- 
 using Reservas.Application.Services;
 using Reservas.Domain.Factories;
- 
+using Reservas.Domain.Model.Reservas;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
-
 using Reservas.Domain.Repositories;
-using Reservas.Domain.Model.Reservas;
 using Reservas.Domain.ValueObjects;
 
 namespace Reservas.Application.UseCases.Command.Pedidos.CrearVuelo
@@ -40,28 +37,28 @@ namespace Reservas.Application.UseCases.Command.Pedidos.CrearVuelo
             {
                 string nroVuelo = await _vueloService.GenerarNroVueloAsync();
                 string _Tipo_Asiento_ = string.Empty;
-                PrecioValue _Cantidad_ = 0;
-                PrecioValue _Precio_ = 0;
-                Pasaje _Pasaje_ = 1;
-                Vuelos objPedido = _vueloFactory.Create(nroVuelo, _Tipo_Asiento_,  _Cantidad_,  _Precio_,  _Pasaje_);
+                int _Cantidad_ = 0;
+                decimal _Precio_ = 0;
+                Guid _Pasaje_ = Guid.NewGuid();
+                Vuelo objVuelo = _vueloFactory.Create(nroVuelo, _Tipo_Asiento_, _Cantidad_, _Precio_, _Pasaje_);
 
-              //  foreach (var item in request.Detalle)
-               // {
-                    objPedido.AgregarItem(nroVuelo,_Tipo_Asiento_,_Cantidad_,_Precio_,_Pasaje_);
-              //  }
+                //  foreach (var item in request.Detalle)
+                // {
+                objVuelo.AgregarItem(nroVuelo, _Tipo_Asiento_, _Cantidad_, _Precio_, _Pasaje_);
+                //  }
 
-                objPedido.ConsolidarPedido();
+                objVuelo.ConsolidarVuelo();
 
-                await _vueloRepository.CreateAsync(objPedido);
+                await _vueloRepository.CreateAsync(objVuelo);
 
 
                 await _unitOfWork.Commit();
 
-                return objPedido.Id;
+                return objVuelo.Id;
             }
             catch (Exception ex)
             {
-               // _logger.LogError(ex, "Error al crear pedido");
+                // _logger.LogError(ex, "Error al crear pedido");
             }
             return Guid.Empty;
         }

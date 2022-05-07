@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace Reservas.Domain.Repositories
 {
-    public interface IProductoRepository : IRepository<Vuelos, Guid>
+    public interface IPasajeRepository : IRepository<Vuelo, Guid>
     {
-        Task UpdateAsync(Vuelos obj);
+        Task UpdateAsync(Vuelo obj);
 
-        Task RemoveAsync(Vuelos obj);
+        Task RemoveAsync(Vuelo obj);
 
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Domain\bin\Debug\net5.0\Reservas.Domain.deps.json
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Domain\bin\Debug\net5.0\Reservas.Domain.dll
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Domain\bin\Debug\net5.0\Reservas.Domain.pdb
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Domain\bin\Debug\net5.0\ShareKernel.dll
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Domain\bin\Debug\net5.0\ShareKernel.pdb
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Domain\obj\Debug\net5.0\Reservas.Domain.csproj.AssemblyReference.cache
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Domain\obj\Debug\net5.0\Reservas.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Domain\obj\Debug\net5.0\Reservas.Domain.AssemblyInfoInputs.cache
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Domain\obj\Debug\net5.0\Reservas.Domain.AssemblyInfo.cs
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Domain\obj\Debug\net5.0\Reservas.Domain.csproj.CoreCompileInputs.cache
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Domain\obj\Debug\net5.0\Reservas.Domain.csproj.CopyComplete
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Domain\obj\Debug\net5.0\Reservas.Domain.dll
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Domain\obj\Debug\net5.0\refint\Reservas.Domain.dll
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Domain\obj\Debug\net5.0\Reservas.Domain.pdb
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Domain\obj\Debug\net5.0\ref\Reservas.Domain.dll

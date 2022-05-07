@@ -11,7 +11,7 @@ namespace Reservas.Infraestructure.EF.Contexts
 {
     public class WriteDbContext : System.Data.Entity.DbContext
     {
-        public virtual System.Data.Entity.DbSet<Vuelos> Vuelos { get; set; }
+        public virtual System.Data.Entity.DbSet<Vuelo> Vuelos { get; set; }
        // public virtual DbSet<Producto> Producto { get; set; }
 
         public WriteDbContext(DbContextOptions<WriteDbContext> options) : base(options)
@@ -23,7 +23,7 @@ namespace Reservas.Infraestructure.EF.Contexts
             base.OnModelCreating(modelBuilder);
 
             var VueloConfig = new VueloWriteConfig();
-            modelBuilder.ApplyConfiguration<Vuelos>(VueloConfig);
+            modelBuilder.ApplyConfiguration<Vuelo>(VueloConfig);
            // modelBuilder.ApplyConfiguration<DetallePedido>(pedidoConfig);
 
             //var productoConfig = new ProductoWriteConfig();

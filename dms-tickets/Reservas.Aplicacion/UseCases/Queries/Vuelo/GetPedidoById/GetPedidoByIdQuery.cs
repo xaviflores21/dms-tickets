@@ -2,7 +2,7 @@
 using Reservas.Application.Dto.Vuelo;
 using System;
 
-namespace Reservas.Application.UseCases.Queries.Pedidos.GetPedidoById
+namespace Reservas.Application.UseCases.Queries.Vuelo.GetPedidoById
 {
     public class GetPedidoByIdQuery : IRequest<VueloDto>
     {

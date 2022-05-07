@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pedidos.Application.Dto.Pedido
 {
-    public class DetallePedidoDto
+    public class DetalleVueloDto
     {
         public Guid ProductoId { get; set; }
         public int Cantidad { get; set; }

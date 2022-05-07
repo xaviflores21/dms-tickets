@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Reservas.Domain.Repositories
 {
-    public interface IVueloRepository : IRepository<Vuelos, Guid>
+    public interface IVueloRepository : IRepository<Vuelo, Guid>
     {
-        Task UpdateAsync(Vuelos obj);
+        Task UpdateAsync(Vuelo obj);
     }
 }

@@ -15,8 +15,6 @@ namespace Reservas.Application
             services.AddTransient<IVueloService, VueloService>();
             services.AddTransient<IVueloFactory, VueloFactory>();
 
-
-
             return services;
         }
 

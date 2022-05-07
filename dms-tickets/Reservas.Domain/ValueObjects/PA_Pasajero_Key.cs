@@ -7,29 +7,29 @@ using System.Threading.Tasks;
 
 namespace Reservas.Domain.ValueObjects
 {
-    public record  PA_Pasajero_Key
+    public record PA_Pasajero_Key
     {
-         
-            public string Value { get; }
-            public PA_Pasajero_Key(string  value)
-            {
-                if (value != string.Empty  )
-                {
-                    throw new BussinessRuleValidationException("Price value cannot be negative");
-                }
-                Value = value;
-            }
 
-            public static implicit operator string (PA_Pasajero_Key value)
+        public string Value { get; }
+        public PA_Pasajero_Key(string value)
+        {
+            if (value != string.Empty)
             {
-                return value.Value;
+                throw new BussinessRuleValidationException("Price value cannot be negative");
             }
+            Value = value;
+        }
 
-            public static implicit operator PA_Pasajero_Key(string  value)
-            {
-                return new PA_Pasajero_Key(value);
-            }
+        public static implicit operator string(PA_Pasajero_Key value)
+        {
+            return value.Value;
+        }
 
- 
+        public static implicit operator PA_Pasajero_Key(string value)
+        {
+            return new PA_Pasajero_Key(value);
+        }
+
+
     }
 }

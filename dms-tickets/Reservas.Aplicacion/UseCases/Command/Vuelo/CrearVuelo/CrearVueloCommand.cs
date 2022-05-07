@@ -9,12 +9,12 @@ namespace Reservas.Application.UseCases.Command.Pedidos.CrearVuelo
     {
         private CrearVueloCommand() { }
 
-        public CrearVueloCommand(List<DetallePedidoDto> detalle)
+        public CrearVueloCommand(List<DetalleVueloDto> detalle)
         {
             Detalle = detalle;
         }
 
-        public List<DetallePedidoDto> Detalle { get; set; }
+        public List<DetalleVueloDto> Detalle { get; set; }
 
         
 

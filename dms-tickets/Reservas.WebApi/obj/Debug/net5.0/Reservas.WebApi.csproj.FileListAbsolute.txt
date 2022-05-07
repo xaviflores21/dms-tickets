@@ -1,0 +1,6 @@
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.WebApi\obj\Debug\net5.0\Reservas.WebApi.csproj.AssemblyReference.cache
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.WebApi\obj\Debug\net5.0\Reservas.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.WebApi\obj\Debug\net5.0\Reservas.WebApi.AssemblyInfoInputs.cache
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.WebApi\obj\Debug\net5.0\Reservas.WebApi.AssemblyInfo.cs
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.WebApi\obj\Debug\net5.0\Reservas.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.WebApi\obj\Debug\net5.0\Reservas.WebApi.MvcApplicationPartsAssemblyInfo.cache

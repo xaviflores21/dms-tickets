@@ -1,0 +1,5 @@
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Infraestructura\obj\Debug\net5.0\Reservas.Infraestructura.csproj.AssemblyReference.cache
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Infraestructura\obj\Debug\net5.0\Reservas.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Infraestructura\obj\Debug\net5.0\Reservas.Infraestructura.AssemblyInfoInputs.cache
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Infraestructura\obj\Debug\net5.0\Reservas.Infraestructura.AssemblyInfo.cs
+C:\Users\xavi\Documents\GitHub\dms-tickets\dms-tickets\Reservas.Infraestructura\obj\Debug\net5.0\Reservas.Infraestructura.csproj.CoreCompileInputs.cache
